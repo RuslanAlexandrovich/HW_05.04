@@ -1,0 +1,32 @@
+.row {
+    height: 100px;
+    width: 800px;
+    border: 2px solid orange;
+    
+}
+
+.block {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background: orange;
+    /* transition: all 1s ease; */
+    animation-name: flyblock;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* animation-direction: alternate; */
+    /* animation-delay: 2s; задержка */
+}
+/* .block:hover {
+    transform:translateX(700px);    
+} */
+
+@keyframes flyblock {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 700px;
+    }
+}

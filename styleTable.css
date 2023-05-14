@@ -1,0 +1,155 @@
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bedroom {
+    display:block;
+    height: 150px;
+    width: 100vw;
+    position:fixed; bottom:0;
+    /* border: 2px solid gray; */
+    background: white;
+    z-index: 1;
+}
+
+
+.blockimg {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    /* position: relative;
+    margin-top: 590px; */
+    height: 128px;
+    width: 128px;
+    /* animation-name: pen;
+    animation-duration: 5s;
+    animation-timing-function: 1;
+    animation-iteration-count:initial;
+    animation-fill-mode: forwards; */
+}
+
+.one {
+    position: relative;
+    margin-top: 590px;
+    height: 128px;
+    width: 128px;
+    animation-name: calc;
+    animation-duration: 2s;
+    animation-timing-function: 1;
+    animation-iteration-count:initial;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes calc {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        transform: translate(-100px, -150px) rotate(-30deg);
+        bottom: 200px;
+    }
+}
+
+.two {
+    position: relative;
+    margin-top: 590px;
+    height: 128px;
+    width: 128px;
+    animation-name: book;
+    animation-duration: 2s;
+    animation-timing-function: 1;
+    animation-iteration-count:initial;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes book {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        transform: translate(0px, -200px) rotate(-15deg) scale(1.5);
+        bottom: 250px;
+    }
+}
+
+.three {
+    position: relative;
+    margin-top: 590px;
+    height: 128px;
+    width: 128px;
+    animation-name: pen;
+    animation-duration: 2s;
+    animation-timing-function: 1;
+    animation-iteration-count:initial;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes pen {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        transform: translate(0px, 0px) rotate(90deg);
+        bottom: 200px;
+    }
+}
+
+.four {
+    position: relative;
+    margin-top: 590px;
+    height: 128px;
+    width: 128px;
+    animation-name: paper;
+    animation-duration: 2s;
+    animation-timing-function: 1;
+    animation-iteration-count:initial;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes paper {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        transform: translate(0px, -200px) rotate(15deg) scale(1.5);
+        bottom: 250px;
+    }
+}
+
+.five {
+    position: relative;
+    margin-top: 590px;
+    height: 128px;
+    width: 128px;
+    animation-name: pallet;
+    animation-duration: 2s;
+    animation-timing-function: 1;
+    animation-iteration-count:initial;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes pallet {
+    0% {
+        bottom: 0;
+    }
+    100% {
+        transform: translate(100px, 150px) rotate(30deg);
+        bottom: 500px;
+    }
+}
